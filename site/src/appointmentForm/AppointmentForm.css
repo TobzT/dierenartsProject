@@ -9,3 +9,13 @@
 .AppointmentForm h2 {
   text-align: center;
 }
+
+.AppointmentForm label {
+  display: block;
+  padding-top: 1rem;
+}
+
+.AppointmentForm input {
+  width: 500px;
+  padding: 0.5rem;
+}
