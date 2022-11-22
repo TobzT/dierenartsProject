@@ -1,8 +1,16 @@
 import axios from 'axios';
 
-const instance = axios.create({
-    //baseURL: 'https://burger2803.firebaseio.com/'
-    baseURL: 'http://192.168.1.13:8080/'
-});
 
-export default instance;
+function postForm(data)
+axios.post("localhost:8080/appointement", data, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        })
+        .then((res) => {
+          console.log(res);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+export default postForm;
