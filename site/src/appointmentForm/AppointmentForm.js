@@ -32,19 +32,6 @@ export default function appointmentForm() {
           <input type="tel" id="phone" name="telefoonnummer" maxlength="10" />
         </div>
         <div>
-          <label for="Animaltype">Soort dier</label>
-          <select id="Animaltype" name="Animaltype">
-            <option value="">Maak een keuze</option>
-            <option value="Dog">Hond</option>
-            <option value="Cat">Kat</option>
-            <option value="Bunny">Konijn</option>
-            <option value="Guinea Pig">Cavia</option>
-            <option value="Hamster">Hamster</option>
-            <option value="Rat">Rat</option>
-            <option value="Mouse">Muis</option>
-          </select>
-        </div>
-        <div>
           <label for="number_of_animals">Aantal dieren</label>
           <select id="number_of_animals" name="number_of_animals">
             <option value="">Maak een keuze</option>
@@ -57,6 +44,22 @@ export default function appointmentForm() {
         <div>
           <label for="animal_name">Diernaam:</label>
           <input type="text" id="animal_name" name="Diernaam" placeholder="Flappie" maxlength="90"/>
+        </div>
+        <div>
+          <label for="appointment_type">Type afspraak:</label>
+          <select id="app_type" name="appointment_type">
+            <option value="">Maak een keuze</option>
+            <option value="consult">Consult</option>
+            <option value="first_consult">Eerste consult</option>
+            <option value="vaccination">Vaccinatie</option>
+            <option value="empty_anal_glands">Anaalklieren legen</option>
+            <option value="cut_nails">Nagels knippen</option>
+            <option value="blood_research">Bloedonderzoek</option>
+            <option value="urine_research">Urineonderzoek</option>
+            <option value="teeth_check">Gebitscontrole</option>
+            <option value="post_operative_check">Postoperatieve controle</option>
+            <option value="repeated_prescription">Herhaalrecept bestellen</option>
+          </select>
         </div>
         <div>
           <button type="button">Afspraak bevestigen</button>
