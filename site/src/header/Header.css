@@ -1,0 +1,33 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  padding-inline: 2rem;
+}
+
+.Header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.Header .logo-img {
+  display: inline;
+  width: 130px;
+  height: 80px;
+  margin-right: -1rem;
+}
+
+.Header .logo-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.Header ul {
+  list-style: none;
+}
+
+.Header li {
+  display: inline;
+  padding-inline: 1rem;
+}

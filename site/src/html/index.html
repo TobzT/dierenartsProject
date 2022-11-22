@@ -1,6 +1,57 @@
-<form method="get" action="forms/get.php" target="_blank">
-    <p>Voornaam:   <input type="text" name="voornaam" size="30"></p>
-    <p>Achternaam: <input type="text" name="achternaam" size="75"></p>
-    <p></p>
-    <p><input type="submit" value="Verzenden"></p>
- </form>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+  <h1 class="title">Afspraak maken</h1>
+   <ul class="navigation">
+    <li><a HREF="index.html">Home</a></li>
+    <li><a HREF="about.html">About</a></li>
+    <li><a HREF="appointment.html">Afspraak Plannen</a></li>
+   </ul> 
+<form>
+    <div>
+        <label for="name">Naam:</label>
+        <input type="text" id="name" name="naam" placeholder="Jan Klaassen" maxlength="30">
+    </div>
+    <div>
+    <label for="e-mail">E-mailadres:</label>
+    <input type="email" id="e-mail" name="e-mail" maxlength="75">
+    </div>
+    <div>
+    <label for="phone">Telefoonnummer:</label>
+    <input type="tel" id="phone" name="telefoonnummer" maxlength="10">
+    </div>
+    <div>
+     <label for="Animaltype">Soort dier</label>
+        <select id="Animaltype" name="Animaltype">
+            <option value="">Maak een keuze</option>
+            <option value="Dog">Hond</option>
+            <option value="Cat">Kat</option>
+            <option value="Bunny">Konijn</option>
+            <option value="Guinea Pig">Cavia</option>
+            <option value="Hamster">Hamster</option>
+            <option value="Rat">Rat</option>
+            <option value="Mouse">Muis</option>
+        </select>
+    </div>
+    <label for="Numberofanimals">Aantal dieren</label>
+    <select id="Numberofanimals" name="Numberofanimals">
+        <option value="">Maak een keuze</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+    </select>
+    <div>
+        <label for="Animalname">Diernaam:</label>
+        <input type="text" id="Animalname" name="Diernaamnaam" placeholder="Flappie" maxlength="90">
+    </div>
+    <div>
+  <input type="Confirmappointment" value="Afspraak bevestigen"> 
+    </div>
+</form>
+ <footer>
+ </footer>
+</body>
+</html>
