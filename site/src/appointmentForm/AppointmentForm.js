@@ -46,11 +46,10 @@ export default function appointmentForm() {
         </div>
         <label for="Numberofanimals">Aantal dieren</label>
         <select id="Numberofanimals" name="Numberofanimals">
-          <option value="">Maak een keuze</option>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
+        <input type="radio" id="no_animals" name="number of animals" value="animals"/><label for="no_animals">1</label>
+        <input type="radio" id="no_animals" name="number of animals" value="animals"/><label for="no_animals">2</label>
+        <input type="radio" id="no_animals" name="number of animals" value="animals"/><label for="no_animals">3</label>
+        <input type="radio" id="no_animals" name="number of animals" value="animals"/><label for="no_animals">4</label>
         </select>
         <div>
           <label for="animal_name">Diernaam:</label>
@@ -62,79 +61,17 @@ export default function appointmentForm() {
             maxlength="90"
           />
         </div>
-        Type Afspraak:
-        <input
-          type="radio"
-          id="ta_consult"
-          name="appointment_type"
-          value="consult"
-        />
-        <label for="ta_consult">Consult</label>
-        <input
-          type="radio"
-          id="ta_first_consult"
-          name="appointment_type"
-          value="first_consult"
-        />
-        <label for="cp_first_consult">Eerste consult</label>
-        <input
-          type="radio"
-          id="ta_vaccination"
-          name="appointment_type"
-          value="vaccination"
-        />
-        <label for="ta_vaccination">Vaccinatie</label>
-        <input
-          type="radio"
-          id="ta_anal_glands"
-          name="appointment_type"
-          value="anal_glands"
-        />
-        <label for="ta_anal_glands">Anaalklieren legen</label>
-        <input
-          type="radio"
-          id="ta_cut_nails"
-          name="appointment_type"
-          value="cut_nails"
-        />
-        <label for="ta_cut_nails">Nagels knippen</label>
-        <input
-          type="radio"
-          id="ta_blood_research"
-          name="appointment_type"
-          value="blood_research"
-        />
-        <label for="ta_blood_research">Bloed onderzoek</label>
-        <input
-          type="radio"
-          id="ta_urine_research"
-          name="appointment_type"
-          value="urine_research"
-        />
-        <label for="ta_urine_research">Urine onderzoek</label>
-        <input
-          type="radio"
-          id="ta_teeth_check"
-          name="appointment_type"
-          value="teeth_check"
-        />
-        <label for="ta_teeth_check">gebitscontrole</label>
-        <input
-          type="radio"
-          id="ta_post_operative_check"
-          name="appointment_type"
-          value="post_operative_check"
-        />
-        <label for="ta_post_operative_check">Postoperatieve controle</label>
-        <input
-          type="radio"
-          id="ta_order_repeat_prescription"
-          name="appointment_type"
-          value="order_repeat_prescription"
-        />
-        <label for="ta_order_repeat_prescription">
-          Herhaalrecept bestellen
-        </label>
+        Type Afspraak: 
+        <input type="radio" id="ta_consult" name="appointment_type" value="consult"/><label for="ta_consult">Consult</label>
+        <input type="radio" id="ta_first_consult" name="appointment_type" value="first_consult"/><label for="cp_first_consult">Eerste consult</label>
+        <input type="radio" id="ta_vaccination" name="appointment_type" value="vaccination"/><label for="ta_vaccination">Vaccinatie</label>
+        <input type="radio" id="ta_anal_glands" name="appointment_type" value="anal_glands"/><label for="ta_anal_glands">Anaalklieren legen</label>
+        <input type="radio" id="ta_cut_nails" name="appointment_type" value="cut_nails"/><label for="ta_cut_nails">Nagels knippen</label>
+        <input type="radio" id="ta_blood_research" name="appointment_type" value="blood_research"/><label for="ta_blood_research">Bloed onderzoek</label>
+        <input type="radio" id="ta_urine_research" name="appointment_type" value="urine_research"/><label for="ta_urine_research">Urine onderzoek</label>
+        <input type="radio" id="ta_teeth_check" name="appointment_type" value="teeth_check"/><label for="ta_teeth_check">gebitscontrole</label>
+        <input type="radio" id="ta_post_operative_check" name="appointment_type" value="post_operative_check"/><label for="ta_post_operative_check">Postoperatieve controle</label>
+        <input type="radio" id="ta_order_repeat_prescription" name="appointment_type" value="order_repeat_prescription"/><label for="ta_order_repeat_prescription">Herhaalrecept bestellen</label>
         <div>
           <button type="button">Afspraak bevestigen</button>
         </div>
