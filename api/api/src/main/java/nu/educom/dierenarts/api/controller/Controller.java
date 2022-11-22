@@ -1,23 +1,26 @@
 package nu.educom.dierenarts.api.controller;
 
-import nu.educom.dierenarts.api.controller.models.Appointment;
-import nu.educom.dierenarts.api.controller.models.Available;
-import org.springframework.http.MediaType;
+//import nu.educom.dierenarts.api.controller.data.AppointmentService;
+import nu.educom.dierenarts.api.data.Test;
+import nu.educom.dierenarts.api.models.Appointment;
+import nu.educom.dierenarts.api.models.Available;
 import org.springframework.web.bind.annotation.*;
 
-import javax.lang.model.util.AbstractAnnotationValueVisitor6;
 import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class Controller {
-
+//    @Autowired
+//    AppointmentService appointmentService;
 
     @GetMapping("/appointment/{appId}") // TODO
     public Appointment getAppointment(@PathVariable String appId) {
+//        Appointment output = appointmentService.getAppointment(appId);
         Appointment output = new Appointment();
         return output;
     }
+
 
     @GetMapping("/available")
     public List<Available> getAvailable() {
@@ -28,6 +31,14 @@ public class Controller {
         output.add(new Available(4, "9:45", false, "Sylvia"));
         output.add(new Available(5, "10:00", false, "Danique"));
         output.add(new Available(6, "10:00", false, "Sylvia"));
+        return output;
+    }
+
+    @PostMapping("/available")
+    public Test postAvailable(@RequestParam String name, @RequestParam String type_of_animal) {
+
+        Test output = new Test(name, type_of_animal);
+
         return output;
     }
 }
