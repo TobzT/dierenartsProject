@@ -1,14 +1,24 @@
 package nu.educom.dierenarts.api.controller.models;
 
 public class Available {
+    int id;
     String time;
     boolean occupied;
     String doctor;
 
-    public Available(String time, boolean occupied, String doctor) {
+    public Available(int id, String time, boolean occupied, String doctor) {
+        this.id = id;
         this.time = time;
         this.occupied = occupied;
         this.doctor = doctor;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getTime() {

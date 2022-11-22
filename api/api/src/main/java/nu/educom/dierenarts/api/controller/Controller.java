@@ -22,12 +22,12 @@ public class Controller {
     @GetMapping("/available")
     public List<Available> getAvailable() {
         List<Available> output = new ArrayList<Available>();
-        output.add(new Available("9:30", true, "Danique"));
-        output.add(new Available("9:30", true, "Sylvia"));
-        output.add(new Available("9:45", true, "Danique"));
-        output.add(new Available("9:45", false, "Sylvia"));
-        output.add(new Available("10:00", false, "Danique"));
-        output.add(new Available("10:00", false, "Sylvia"));
+        output.add(new Available(1, "9:30", true, "Danique"));
+        output.add(new Available(2, "9:30", true, "Sylvia"));
+        output.add(new Available(3, "9:45", true, "Danique"));
+        output.add(new Available(4, "9:45", false, "Sylvia"));
+        output.add(new Available(5, "10:00", false, "Danique"));
+        output.add(new Available(6, "10:00", false, "Sylvia"));
         return output;
     }
 }
