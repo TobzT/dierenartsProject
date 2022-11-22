@@ -34,10 +34,10 @@ public class Controller {
         return output;
     }
 
-    @PostMapping("/available")
-    public Test postAvailable(@RequestParam String name, @RequestParam String type_of_animal) {
-
-        Test output = new Test(name, type_of_animal);
+    @PostMapping("/appointment")
+    public Test postAvailable(@RequestParam String naam, @RequestParam String email, @RequestParam String telefoonnummer, @RequestParam int number_of_animals, @RequestParam String Diernaam, @RequestParam String appointment_type) {
+        System.out.println("POSTING");
+        Test output = new Test(naam, email, telefoonnummer, number_of_animals, Diernaam, appointment_type);
 
         return output;
     }
