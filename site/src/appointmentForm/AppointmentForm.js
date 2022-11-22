@@ -4,15 +4,18 @@ import "./AppointmentForm.css";
 export default function appointmentForm() {
   function handleSubmit(event) {
     event.preventDefault();
+
     const formData = new FormData(event.target);
-    const formDataObj = {};
+
+    let formDataObj = {};
     formData.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);
   }
 
   return (
     <div className="AppointmentForm">
       <h2>Afspraak gegevens</h2>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label for="name">Naam:</label>
           <input
@@ -43,7 +46,13 @@ export default function appointmentForm() {
         </div>
         <div>
           <label for="animal_name">Diernaam:</label>
-          <input type="text" id="animal_name" name="Diernaam" placeholder="Flappie" maxlength="90"/>
+          <input
+            type="text"
+            id="animal_name"
+            name="Diernaam"
+            placeholder="Flappie"
+            maxlength="90"
+          />
         </div>
         <div>
           <label for="appointment_type">Type afspraak:</label>
@@ -57,12 +66,16 @@ export default function appointmentForm() {
             <option value="blood_research">Bloedonderzoek</option>
             <option value="urine_research">Urineonderzoek</option>
             <option value="teeth_check">Gebitscontrole</option>
-            <option value="post_operative_check">Postoperatieve controle</option>
-            <option value="repeated_prescription">Herhaalrecept bestellen</option>
+            <option value="post_operative_check">
+              Postoperatieve controle
+            </option>
+            <option value="repeated_prescription">
+              Herhaalrecept bestellen
+            </option>
           </select>
         </div>
         <div>
-          <button type="button">Afspraak bevestigen</button>
+          <button type="submit">Afspraak bevestigen </button>
         </div>
       </form>
     </div>

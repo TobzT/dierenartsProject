@@ -19,3 +19,7 @@
   width: 500px;
   padding: 0.5rem;
 }
+
+.AppointmentForm button {
+  margin-top: 2rem;
+}
