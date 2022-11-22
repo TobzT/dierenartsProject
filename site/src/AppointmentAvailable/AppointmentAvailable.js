@@ -2,14 +2,12 @@ import React from "react";
 import AppointmentTimeslot from "./AppointmentTimeslot.js";
 import "./AppointmentAvailable.css";
 import { Icon } from "@iconify/react";
-import ShowCalendar from "./ShowCalendar.js";
 
 export default function appointmentAvailable(data) {
   let status = "";
   const appointments = data.data;
 
   const ShowCalendar = () => {
-    console.log(appointments);
     let result = [];
     appointments.forEach((appointment, index) => {
       if (appointment.occupied) {
@@ -17,7 +15,9 @@ export default function appointmentAvailable(data) {
       } else {
         status = "available-timeslot";
       }
-      result.push(<AppointmentTimeslot data={appointment} status={status} />);
+      result.push(
+        <AppointmentTimeslot key={index} data={appointment} status={status} />
+      );
     });
     return result;
   };
