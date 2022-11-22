@@ -8,8 +8,12 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <AppointmentForm />
-      <AppointmentAvailable />
+      <div className="section">
+        <div className="AppointmentPage">
+          <AppointmentForm />
+          <AppointmentAvailable />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./AppointmentForm.css";
 
 export default function appointmentForm() {
   function handleSubmit(event) {
@@ -9,8 +10,8 @@ export default function appointmentForm() {
   }
 
   return (
-    <div className="appointmentForm">
-      <div>This is the appointmentForm hi</div>
+    <div className="AppointmentForm">
+      <h2>Afspraak gegevens</h2>
     </div>
   );
 }

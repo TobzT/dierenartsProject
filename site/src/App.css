@@ -1,0 +1,8 @@
+.App .section {
+  margin: 4rem;
+}
+
+.App .AppointmentPage {
+  display: flex;
+  justify-content: space-around;
+}
