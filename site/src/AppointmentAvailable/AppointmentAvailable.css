@@ -1,0 +1,11 @@
+.AppointmentAvailable {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.412);
+  width: 300px;
+  display: flex;
+
+  flex-direction: column;
+  padding: 2rem;
+}
+.AppointmentAvailable h2 {
+  text-align: center;
+}

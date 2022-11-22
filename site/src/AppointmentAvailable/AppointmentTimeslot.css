@@ -1,0 +1,30 @@
+.AppointmentTimeslot .available-timeslot,
+.AppointmentTimeslot .unavailable-timeslot,
+.AppointmentTimeslot .selected-timeslot {
+  height: 50px;
+  width: 100px;
+}
+
+.AppointmentTimeslot .available-timeslot {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.AppointmentTimeslot {
+  display: flex;
+  align-items: center;
+}
+
+.AppointmentTimeslot .time {
+  padding: 1rem;
+}
+
+.AppointmentTimeslot .unavailable-timeslot {
+  background-color: red;
+  cursor: default;
+}
+
+.AppointmentTimeslot .selected-timeslot {
+  background-color: orange;
+  cursor: pointer;
+}
