@@ -44,6 +44,16 @@ export default function appointmentForm() {
             <option value="Mouse">Muis</option>
           </select>
         </div>
+        <div>
+          <label for="number_of_animals">Aantal dieren</label>
+          <select id="number_of_animals" name="number_of_animals">
+            <option value="">Maak een keuze</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
         <label for="Numberofanimals">Aantal dieren</label>
         <select id="Numberofanimals" name="Numberofanimals">
         <input type="radio" id="no_animals" name="number of animals" value="animals"/><label for="no_animals">1</label>
