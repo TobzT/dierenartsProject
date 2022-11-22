@@ -15,7 +15,20 @@
   padding-top: 1rem;
 }
 
+.AppointmentForm input[type="radio"] + label {
+  display: inline
+}
+
 .AppointmentForm input {
   width: 500px;
   padding: 0.5rem;
 }
+
+.AppointmentForm input[type="radio"] {
+  width: auto;
+}
+
+.AppointmentForm button {
+  margin-top: 2rem;
+}
+
