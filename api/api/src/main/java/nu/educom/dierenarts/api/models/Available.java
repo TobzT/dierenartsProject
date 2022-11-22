@@ -1,4 +1,4 @@
-package nu.educom.dierenarts.api.controller.models;
+package nu.educom.dierenarts.api.models;
 
 public class Available {
     int id;

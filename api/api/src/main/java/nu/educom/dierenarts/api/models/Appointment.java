@@ -1,9 +1,18 @@
-package nu.educom.dierenarts.api.controller.models;
+package nu.educom.dierenarts.api.models;
+
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.Bean;
 
 import java.io.Serializable;
+import javax.persistence.*;
 
+
+@Entity
+//@Table(name="appointments")
 public class Appointment implements Serializable {
 
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     String name;
     String email;
@@ -30,7 +39,6 @@ public class Appointment implements Serializable {
         app_number = "2022-0001";
 
     }
-
     public int getId() {
         return id;
     }
