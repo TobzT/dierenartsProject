@@ -28,10 +28,9 @@ class App extends Component {
       <Header />
       <AppointmentForm />
       <AppointmentAvailable />
-      </div>
-    );
-  }
+    </div>
+  );
 }
 
-
+}
 export default App;

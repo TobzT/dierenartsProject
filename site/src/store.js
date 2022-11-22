@@ -10,8 +10,7 @@ const initialState = {
     type_of_consult: '',
     app_date: '',
     app_time : '',
-    app_nbr: '',
-    doctor : ''
+    app_nbr: ''
 };
 
 
