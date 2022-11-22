@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-function postForm(data)
+function postForm(data){
 axios.post("localhost:8080/appointement", data, {
           headers: {
             "Content-Type": "application/json",
@@ -13,4 +13,5 @@ axios.post("localhost:8080/appointement", data, {
         .catch((err) => {
           console.log(err);
         });
+    }
 export default postForm;
